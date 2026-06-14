@@ -1,0 +1,26 @@
+[
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt and David Thomas",
+    "genre": "Programming",
+    "price": 39.99,
+    "publishedDate": "1999-10-20T00:00:00.000Z",
+    "inStock": true
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "genre": "Programming",
+    "price": 34.5,
+    "publishedDate": "2008-08-01T00:00:00.000Z",
+    "inStock": true
+  },
+  {
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "genre": "Programming",
+    "price": 25.0,
+    "publishedDate": "2018-12-04T00:00:00.000Z",
+    "inStock": false
+  }
+]

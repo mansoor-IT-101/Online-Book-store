@@ -1,0 +1,61 @@
+{
+  "info": {
+    "name": "Online Bookstore API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all books",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:5000/api/books"
+      }
+    },
+    {
+      "name": "Get book by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:5000/api/books/:id"
+      }
+    },
+    {
+      "name": "Create book",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"New Book\",\n  \"author\": \"Some Author\",\n  \"genre\": \"Fiction\",\n  \"price\": 19.99\n}"
+        },
+        "url": "http://localhost:5000/api/books"
+      }
+    },
+    {
+      "name": "Update book",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": { "mode": "raw", "raw": "{ \"price\": 29.99 }" },
+        "url": "http://localhost:5000/api/books/:id"
+      }
+    },
+    {
+      "name": "Delete book",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:5000/api/books/:id"
+      }
+    },
+    {
+      "name": "Health",
+      "request": { "method": "GET", "header": [], "url": "http://localhost:5000/health" }
+    }
+  ]
+}
